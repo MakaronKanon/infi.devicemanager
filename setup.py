@@ -5,7 +5,7 @@ SETUP_INFO = dict(
     author = '${infi.recipe.template.version:author}',
     author_email = '${infi.recipe.template.version:author_email}',
 
-    url = ${infi.recipe.template.version:homepage},
+    url = '${infi.recipe.template.version:homepage}',
     license = 'BSD',
     description = """${project:description}""",
     long_description = """${project:long_description}""",
@@ -22,8 +22,8 @@ SETUP_INFO = dict(
         "Topic :: Software Development :: Libraries :: Python Modules",
     ],
 
-    install_requires = ${project:install_requires},
-    namespace_packages = ${project:namespace_packages},
+    install_requires = '${project:install_requires}',
+    namespace_packages = '${project:namespace_packages}',
 
     package_dir = {'': 'src'},
     package_data = {'': ${project:package_data}},
@@ -31,8 +31,8 @@ SETUP_INFO = dict(
     zip_safe = False,
 
     entry_points = dict(
-        console_scripts = ${project:console_scripts},
-        gui_scripts = ${project:gui_scripts},
+        console_scripts = '${project:console_scripts}',
+        gui_scripts = '${project:gui_scripts}',
         ),
 )
 
