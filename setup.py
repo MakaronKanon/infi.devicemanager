@@ -26,7 +26,7 @@ SETUP_INFO = dict(
     namespace_packages = '${project:namespace_packages}',
 
     package_dir = {'': 'src'},
-    package_data = {'': ${project:package_data}},
+    package_data = {'': '${project:package_data}'},
     include_package_data = True,
     zip_safe = False,
 
